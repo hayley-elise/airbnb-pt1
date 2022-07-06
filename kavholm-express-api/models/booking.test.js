@@ -7,7 +7,7 @@ const {
   commonAfterEach,
   commonAfterAll,
   testListingIds,
-} = require("../tests/common")
+} = require("./common")
 
 beforeAll(commonBeforeAll)
 beforeEach(commonBeforeEach)

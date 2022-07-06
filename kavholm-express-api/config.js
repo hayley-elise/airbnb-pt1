@@ -2,7 +2,7 @@ require("dotenv").config()
 require("colors")
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3001
-const SECRET_KEY = process.env.SECRET_KEY || "secret_dev"
+const SECRET_KEY = process.env.SECRET_KEY || "food_is_wonderful"
 
 const IS_TESTING = process.env.NODE_ENV === "test"
 
@@ -24,7 +24,7 @@ console.log("Kavholm Config:".red)
 console.log("PORT:".blue, PORT)
 console.log("SECRET_KEY:".blue, SECRET_KEY)
 console.log("IS_TESTING:".blue, IS_TESTING)
-console.log("BCRYPT_WORK_FACTOR".blue, BCRYPT_WORK_FACTOR)
+console.log("BCRYPT_WORK_FACTOR:".blue, BCRYPT_WORK_FACTOR)
 console.log("Database:".blue, getDatabaseUri())
 console.log("---")
 
